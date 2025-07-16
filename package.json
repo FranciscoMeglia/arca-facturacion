@@ -1,0 +1,27 @@
+{
+  "name": "arca-facturacion",
+  "version": "1.0.3",
+  "description": "Consultá los metodos del Web Service WSFE de ARCA rapido y facil con JavaScript",
+  "main": "index.js",
+  "author": "Francisco Meglia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FranciscoMeglia/arca-facturacion"
+  },
+  "homepage": "https://github.com/FranciscoMeglia/arca-facturacion/tree/main#readme",
+  "bugs": {
+    "url": "https://github.com/FranciscoMeglia/arca-facturacion/issues"
+  },
+  "keywords": [
+    "afip",
+    "arca",
+    "facturacion",
+    "facturacion electronica"
+  ],
+  "dependencies": {
+    "soap": "^0.42.0",
+    "xml2js": "^0.4.23",
+    "lodash": "^4.17.21"
+  }
+}
