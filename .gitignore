@@ -1,0 +1,9 @@
+node_modules
+certs
+package-lock.json
+/.lastTokensH/LoginTicketRequest-wsfe.xml
+/.lastTokensH/LoginTicketRequest-wsfe.cms
+/.lastTokensH/ta-wsfe.json
+/.lastTokensP/LoginTicketRequest-wsfe.xml
+/.lastTokensP/LoginTicketRequest-wsfe.cms
+/.lastTokensP/ta-wsfe.json
