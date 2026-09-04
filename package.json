@@ -1,8 +1,12 @@
 {
   "name": "arca-facturacion",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Consultá los metodos del Web Service WSFE de ARCA rapido y facil con JavaScript",
   "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-test-module-mocks --test \"test/*.test.js\"",
+    "test:integration": "node scripts/run-integration.js"
+  },
   "author": "Francisco Meglia",
   "license": "MIT",
   "repository": {
@@ -20,8 +24,8 @@
     "facturacion electronica"
   ],
   "dependencies": {
-    "lodash": "^4.17.21",
-    "soap": "^0.42.0",
-    "xml2js": "^0.4.23"
+    "qrcode": "^1.5.4",
+    "soap": "^1.11.0",
+    "xml2js": "^0.6.2"
   }
 }
