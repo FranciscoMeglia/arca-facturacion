@@ -1,9 +1,13 @@
 node_modules
 certs
 package-lock.json
-/.lastTokensH/LoginTicketRequest-wsfe.xml
-/.lastTokensH/LoginTicketRequest-wsfe.cms
-/.lastTokensH/ta-wsfe.json
-/.lastTokensP/LoginTicketRequest-wsfe.xml
-/.lastTokensP/LoginTicketRequest-wsfe.cms
-/.lastTokensP/ta-wsfe.json
+
+# TA cache (real tokens/sign) and temp signing files getTA() generates at
+# runtime for any ARCA service - glob'd since the temp files carry a random
+# per-call suffix (see lib/core/auth.js) and the service name varies.
+/.lastTokensH/ta-*.json
+/.lastTokensH/LoginTicketRequest-*.xml
+/.lastTokensH/LoginTicketRequest-*.cms
+/.lastTokensP/ta-*.json
+/.lastTokensP/LoginTicketRequest-*.xml
+/.lastTokensP/LoginTicketRequest-*.cms

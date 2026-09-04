@@ -1,0 +1,26 @@
+# Dev-only - not needed by consumers of the published package
+test/
+scripts/
+
+# Secrets / local-only. IMPORTANT: once this file exists, npm stops falling
+# back to .gitignore entirely - these have to be repeated here or they could
+# leak into `npm publish` if run from a local folder that has them on disk.
+certs/
+package-lock.json
+
+# .lastTokensH/ and .lastTokensP/ themselves DO ship - getTA() reads/writes
+# its TA cache there at runtime (inside node_modules/arca-facturacion/) and
+# creates the folder itself if missing, but shipping it makes that obvious.
+# What must NEVER ship is anything actually generated in it - a ta-*.json
+# holds a real cached token/sign, and the *.xml/*.cms are the (also
+# sensitive) signed request used to get one.
+.lastTokensH/ta-*.json
+.lastTokensH/LoginTicketRequest-*.xml
+.lastTokensH/LoginTicketRequest-*.cms
+.lastTokensP/ta-*.json
+.lastTokensP/LoginTicketRequest-*.xml
+.lastTokensP/LoginTicketRequest-*.cms
+
+# Editor/OS noise
+.vscode/
+.DS_Store
